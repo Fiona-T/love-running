@@ -57,3 +57,37 @@ and then the child li to the left otherwise if float li right the order reverses
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* hero image*/
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+/* overflow:hidden above is the same as using clear: both - means this section and its child clears the header
+and also means it trims off the edge of the image when zoomed in to 110 percent*/
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+
+    /*below animates the zoom effect on the hero-image when the page loads */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; /*retains state of animation at last keyframe*/
+}
+
+/*creates the zoom for hero image */
+@keyframes hero-zoom {
+    /* initial state - scale is 100 percent */
+    from { 
+        transform: scale(1);
+    }
+
+    /*final state - scaled to 110 percent. fill-forwards above keeps it at this state */
+    to {
+        transform: scale(1.1);
+    }
+}
