@@ -195,3 +195,13 @@ and to align p text to right to create curve around centre image*/
     height: 100%; /*height must be set or else image will not appear*/
     border-radius: 50%; /*to change to circle. Note image must be roughly square to work*/
 }
+
+/*event times in meetup section*/
+#times {
+    background-image: url('../images/dublin-city.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
