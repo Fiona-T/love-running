@@ -137,10 +137,9 @@ and also means it trims off the edge of the image when zoomed in to 110 percent*
 }
 
 #center-about {
-    padding-top: 30px;
+    /**padding-top: 30px; removed but not mentioned in video - centers the image more**/
     width: 33%;
     margin: 0 auto;
-    background-color: green;
 }
 
 hr {
@@ -149,6 +148,8 @@ hr {
     margin: 5px 0;
 }
 
+/*new class to target each of the about sections in the club ethos, then 
+separate class below targets the left and right ones to float left or right*/
 .about-heading {
     width: 60%;
     line-height: 20px;
@@ -170,3 +171,27 @@ and to align p text to right to create curve around centre image*/
     text-align: right; 
 }
 
+/*this is the heading text for the club ethos section*/
+#welcome {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%;
+}
+
+/*this is the outside circle container for the center image*/
+#circle-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /*changes shape to a circle in combination with width and height above*/
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    margin: 0 auto; /*centers the circle inside the parent div, center-about*/
+    padding: 30px;
+}
+
+#circle-cover-bg {
+    background: url('../images/ethos-center-image.jpeg') no-repeat center center;
+    height: 100%; /*height must be set or else image will not appear*/
+    border-radius: 50%; /*to change to circle. Note image must be roughly square to work*/
+}
