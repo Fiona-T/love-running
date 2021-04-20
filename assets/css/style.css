@@ -128,14 +128,12 @@ and also means it trims off the edge of the image when zoomed in to 110 percent*
     padding-top: 30px;
     width: 33%;
     float: left;
-    background-color: blue;
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-    background-color: silver;
 }
 
 #center-about {
@@ -144,3 +142,31 @@ and also means it trims off the edge of the image when zoomed in to 110 percent*
     margin: 0 auto;
     background-color: green;
 }
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.about-heading {
+    width: 60%;
+    line-height: 20px;
+    margin-bottom: 50px;
+    clear: both; /*this vertically aligns both divs that are floated either left or right below*/
+}
+
+.left-about-heading {
+    float: right; /*align to righ of parent div, beside center photo*/
+}
+
+.right-about-heading {
+    float: left;
+}
+
+/*below is to make space for icons, which will be aligned towards centre image
+and to align p text to right to create curve around centre image*/
+.right-about-heading h2, .right-about-heading p {
+    text-align: right; 
+}
+
