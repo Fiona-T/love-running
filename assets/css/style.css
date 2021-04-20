@@ -244,3 +244,15 @@ footer {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* gallery section on gallery page*/
+#photos {
+    clear: both; /*so that it displays below the header*/
+    line-height: 0; /*removes horizontal gaps between images*/
+    column-count: 4;
+    column-gap: 0; /*removes vertical gaps between images*/
+}
+
+#photos > img {
+    width: 100%; /*so that each image fits into the column correctly*/
+}
