@@ -289,6 +289,15 @@ footer {
     hr {
         display: none; /*do not show horizontal rule at this size*/
     }
+
+    /*meeting times section*/
+
+    #times > div {
+        width: 100%; /*at higher screen size this is 20%*/
+        clear: both; /*to stack vertical*/
+        height: 150px;
+        padding: 0; /*clear padding included for larger sizes*/
+    }
 }
 
 /*for medium screens 950px wide and below*/
