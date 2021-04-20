@@ -293,6 +293,8 @@ footer {
 
 /*for medium screens 950px wide and below*/
 @media screen and (max-width: 950px) {
+
+    /*navigation in header - move below logo*/
     #menu {
         float: left; /*these two lines so that menu displays under logo at this size*/
         clear: left;
@@ -300,4 +302,31 @@ footer {
         margin-bottom: 20px;
         line-height: 25px;
     }
+
+    /*text on hero image*/
+    #cover-text {
+        left: 0; /*align the text box to left of screen*/
+    }
+
+    /*club ethos section*/
+    #club-ethos {
+        width: 90%;
+        height: 1200px; /*not sure why this needed as already specified above?*/
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit; /*so that these divs will inherit width from parent div which is 100*/
+    }
+
+    .about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
+
 }
