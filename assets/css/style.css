@@ -256,3 +256,37 @@ footer {
 #photos > img {
     width: 100%; /*so that each image fits into the column correctly*/
 }
+
+/*media queries*/
+
+/*for screens 1200px wide and below*/
+@media screen and (max-width: 1200px) {
+    /*club ethos section*/
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto; /*to center content at lower screen size*/
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0; /*remove any padding that is on the desktop view*/
+    }
+
+    #center-about {
+        clear: both; /*so the image clears both right and left divs*/
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none; /*do not show horizontal rule at this size*/
+    }
+}
