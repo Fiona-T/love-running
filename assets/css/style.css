@@ -290,3 +290,14 @@ footer {
         display: none; /*do not show horizontal rule at this size*/
     }
 }
+
+/*for medium screens 950px wide and below*/
+@media screen and (max-width: 950px) {
+    #menu {
+        float: left; /*these two lines so that menu displays under logo at this size*/
+        clear: left;
+        margin-left: 30px; /*align with logo*/
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
